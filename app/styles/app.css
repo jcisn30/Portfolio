@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.bg {
+    background: url(../assets/images/country.jpg);
+    height:calc(100vh);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom:1px solid #ff6a00
+}
+
+.main {
+    margin: auto 0;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.img-lazy {
+  opacity: 0;
+}
+.img-lazy--loaded {
+  animation: 8000ms fade-in forwards;
+  background: none;
+}
+
+
+
+.fadeinleft {
+  opacity:0;
+  margin-left:-300px;
+  max-width:100%;
+}
+
+.fadeinright {
+  opacity: 0;
+  margin-right: -300px;
+  max-width: 100%;
+}
+
+a {
+  color: #dc3545 !important
+}

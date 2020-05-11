@@ -4,9 +4,17 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    'ember-bootstrap': {
+      'bootstrapVersion': 4,
+      'importBootstrapCSS': true
+    }
+    
   });
 
+  
+  app.import('vendor/column4.js');
+  app.import('vendor/faderight.js');
+  app.import('vendor/smpt.js');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
